@@ -13,7 +13,9 @@ class Program
         }
 
         var avg = StatisticsHelper.calculateAverage(items);
+        var min = StatisticsHelper.findMin(items);
         
         Console.WriteLine($"Your average is {avg}");
+        Console.WriteLine($"Your min numbers is {items}");
     }
 }
