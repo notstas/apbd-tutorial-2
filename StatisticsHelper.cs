@@ -12,4 +12,20 @@ public class StatisticsHelper
         
         return sum / items.Count;
     }
+
+    public static int? findMin(List<int> items)
+    {
+        int? currentMin = null;
+
+        foreach (var num in items)
+        {
+            if  (currentMin == null || currentMin < num)
+                {
+                currentMin = num;
+                }
+          
+        }
+        
+        return currentMin;
+    }
 }
