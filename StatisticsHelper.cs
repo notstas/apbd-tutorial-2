@@ -2,7 +2,7 @@
 
 public class StatisticsHelper
 {
-    public static int calculateAverage(int[] items)
+    public static int calculateAverage(List<int> items)
     {
         var sum = 0;
         foreach (var num in items)
@@ -10,6 +10,6 @@ public class StatisticsHelper
             sum += num;
         }
         
-        return sum / items.Length;
+        return sum / items.Count;
     }
 }
